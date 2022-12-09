@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Mate || Luber Gonzalez</title>
+  </head>
+
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+    }
+    main {
+      min-height: 100vh;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      max-width: 1100px;
+      margin: 0 auto;
+      margin-top: 5rem;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: steelblue;
+      z-index: 10;
+      color: #fff;
+      top: 0;
+      left: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container-number {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    main .text {
+      padding: 1rem 3rem;
+      background-color: hsl(200, 100%, 50%);
+      width: 20%;
+      color: #fff;
+      font-weight: bolder;
+      font-size: 2rem;
+      border: 3px thin #ccc;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    .text.Studio {
+      background-color: rgba(25, 227, 227, 0.831);
+    }
+
+    .text.Mate {
+      background-color: rgba(20, 87, 20, 0.701);
+    }
+
+    .text.StudioMate {
+      background-color: rgba(242, 39, 8, 0.474);
+    }
+    .number {
+      color: black;
+    }
+
+    .wordpress {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .wordpress .text {
+      color: black;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    .p {
+      font-size: 1.5rem;
+    }
+
+    .p a {
+      text-decoration: none;
+      font-weight: bolder;
+      color:blue;
+    }
+    .wordpress{
+        padding: 1rem;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#web-studio">Studio Mate Ejercicio</a></li>
+        <li><a href="#wordpress">Wordpress</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 id="web-studio">Numeros <span class="num"></span></h1>
+      <h2 class="title">Studio Mate</h2>
+
+      <div class="container-number"></div>
+
+      <div class="wordpress" id="wordpress">
+        <h2 class="title">Gerentes Ejercicio</h2>
+        <p class="p">
+          Buenas, no conozco mucho sobre wordpress aunque en un curso de
+          <b>Javascript</b>, utilice su <strong>API</strong>, pero solo, para
+          consumir por el metodo Get, solo mostrar datos de algunos blogs, que
+          tenian su api publica.
+        </p>
+
+        <p class="p">
+          De igual manera, estuve investigamdo, y tienen multiples plugins,<b>
+            WP Google Maps</b
+          >
+          <b>MapPress Maps para WordPress</b>,
+          <b> El Plugin Advanced Google Maps para WordPress</b>, en fin muchos
+          plugins, los cuales necesitan cierta configuracion, para su uso.
+        </p>
+
+        <p class="p">
+          En, la investigacion, me quedaria con el primero
+          <b> WP Google Maps</b>, ya que la version gratuita, consta de muchas,
+          opciones como el poder ir viendo los mapas, a medidas que lo vas
+          desarrollando, esta adaptado a multiples idiomas y cuenta con que los
+          mapas son responsive, para que puedan ser usados desde el dispositivo
+          movil.
+        </p>
+
+        <p class="p">
+          El como funciona, el plugin, la verdad que no lo se pero he ultizado,
+          la api del navegador de Geolocation, y supongo funcionara con las
+          coordenadas, de los punto que necesitemos mostrar,en el mapa, ya sea
+          latitud y longitud, y el poder detectar, en donde se encuentran esos
+          gerenetes.
+        </p>
+
+        <p class="p">
+          Y poder, realizar dependiendo de en que region esten, pues dentro del
+          sistema restringirlos, o dar el acceso a que solo puedan verse los que
+          pertenezcan a dicha region, para tener, mas control de la informacion.
+          <br />
+          Entonces ya evaluando desde donde el administrador se esta conectando,
+          y revisando el area, que tenga encargado, darle los permisos o
+          negarselos, y pues si esta autenticado ya pueda ver como esta la
+          region, de la cual tiene los permisos necesarios.
+        </p>
+
+        <p class="p">
+          Muchas Gracias por la oportunidad y espero me den la oportunidad, para
+          poder seguir aprendiendo, un saludo, y quedo esperando su respuesta
+          hasta luego. Por aqui le dejo un sitio, el cual estoy todavia
+          maquetando para mi portafolio
+          <a
+            href="https://lubergonzalez.github.io/proyect-vite-halo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><b>Proyecto</b></a
+          >
+        </p>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
